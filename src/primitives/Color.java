@@ -5,7 +5,6 @@ package primitives;
  * non-negative RGB values. The colors are maintained without upper limit of
  * 255. Some additional operations are added that are useful for manipulating
  * light's colors
- * @author Dan Zilberstein
  */
 public class Color {
    /**
@@ -35,8 +34,7 @@ public class Color {
 
    /**
     * Constructor to generate a color according to RGB components Each component
-    * in
-    * range 0..255 (for printed white color) or more [for lights]
+    * in range 0..255 (for printed white color) or more [for lights]
     * @param rgb triad of Red/Green/Blue components
     */
    private Color(Double3 rgb) {

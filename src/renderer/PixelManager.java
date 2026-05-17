@@ -6,7 +6,6 @@ package renderer;
  * for follow up its progress.<br/>
  * A Camera uses one pixel manager object and several Pixel objects - one in
  * each thread.
- * @author Dan Zilberstein
  */
 class PixelManager {
     /**

@@ -432,42 +432,6 @@ public Camera renderImage() {
             return this;
         }
 
-
-        /**
-         * Set the image writer
-         *
-         * @param imageWriter the image writer
-         * @return the camera builder
-         */
-        public Builder setImageWriter(ImageWriter imageWriter) {
-            camera.imageWriter = imageWriter;
-            return this;
-        }
-
-
-        /**
-         * Set the number of rays in the grid for the depth of field
-         *
-         * @param n the number of rays in the grid
-         * @return the camera builder
-         */
-        public Builder setNx(int n) {
-            camera.nX = n;
-            return this;
-        }
-
-
-        /**
-         * Set the number of rays in the grid for the
-         *
-         * @param n the number of rays in the grid
-         * @return the camera builder
-         */
-        public Builder setNy(int n) {
-            camera.nY = n;
-            return this;
-        }
-
         /**
          * Configure multithreading:Add commentMore actions
          *   -2 → auto (cores – SPARE_THREADS)

@@ -1,8 +1,19 @@
-### IntelliJ IDEA ###
+### Build output ###
+target/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+
+### Images — render output, not source ###
 images/
+
+### Debug — generated JSON artifacts, not source ###
+debug/*
+!debug/.gitkeep
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
 
 ### Eclipse ###
 .apt_generated
@@ -13,8 +24,6 @@ images/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -28,3 +37,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Python ###
+__pycache__/
+*.pyc
+*.pyo
+
+### Claude / project notes — internal only ###
+__notes/
+CLAUDE.md

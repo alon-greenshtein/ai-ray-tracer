@@ -103,7 +103,6 @@ public class SoftShadowsTests {
         Camera camera = cameraBuilder
                 .setSoftShadows(true)
                 .setGridResolution(5)
-                .setImageWriter(new ImageWriter(500, 500))
                 .setLocation(new Point(70, 80, 320))
                 .setDirection(new Point(0, 0, 0), new Vector(0, 0, 1))
                 .setVpDistance(330)
