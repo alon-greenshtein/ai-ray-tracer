@@ -11,7 +11,6 @@ import scene.Scene;
 
 /**
  * Testing basic shadows
- * @author Dan Zilberstein
  */
 class ShadowTests {
    /** Default constructor to satisfy JavaDoc generator */

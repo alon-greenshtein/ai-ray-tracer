@@ -12,7 +12,6 @@ import scene.Scene;
 
 /**
  * Test rendering a basic image
- * @author Dan
  */
 class RenderTests {
    /** Default constructor to satisfy JavaDoc generator */

@@ -46,3 +46,4 @@ __pycache__/
 ### Claude / project notes — internal only ###
 __notes/
 CLAUDE.md
+/dependency-reduced-pom.xml

@@ -12,7 +12,6 @@ import primitives.Color;
  * producing a non-optimized jpeg image from this matrix. The class although is
  * responsible of holding image related parameters of View Plane - pixel matrix
  * size and resolution
- * @author Dan
  */
 final class ImageWriter {
    /** Horizontal resolution of the image - number of pixels in row */

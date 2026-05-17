@@ -13,7 +13,6 @@ import scene.Scene;
  * Tests for reflection and transparency functionality, test for partial
  * shadows
  * (with transparency)
- * @author Dan Zilberstein
  */
 class ReflectionRefractionTests {
    /** Default constructor to satisfy JavaDoc generator */
