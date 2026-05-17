@@ -1,0 +1,53 @@
+{
+  "camera": {
+    "position":   [4, 4, -12],
+    "target":     [0, 0,   0],
+    "vpDistance": 13,
+    "vpWidth":    8,
+    "vpHeight":   8,
+    "imageWidth":  800,
+    "imageHeight": 800
+  },
+  "background":   [10, 10, 30],
+  "ambientLight": { "color": [15, 15, 15] },
+  "lights": [
+    {
+      "type":      "spot",
+      "position":  [-5, 10, -6],
+      "direction": [1, -1, 0.5],
+      "color":     [600, 500, 400],
+      "kl":        0.0001,
+      "kq":        0.000005
+    },
+    {
+      "type":      "directional",
+      "direction": [1, -0.5, 0.5],
+      "color":     [60, 60, 100]
+    }
+  ],
+  "objects": [
+    {
+      "type":   "plane",
+      "point":  [0, -2.5, 0],
+      "normal": [0,  1,   0],
+      "emission": [10, 10, 30],
+      "material": { "kD": 0.3, "kS": 0.7, "shininess": 80, "kR": 0.5 }
+    },
+    {
+      "type":      "cylinder",
+      "base":      [0, -2.5, 0],
+      "direction": [0,  1,   0],
+      "radius":    1.0,
+      "height":    4.0,
+      "emission":  [5, 5, 25],
+      "material":  { "kD": 0.0, "kS": 0.1, "shininess": 200, "kR": 0.1, "kT": 0.8 }
+    },
+    {
+      "type":     "sphere",
+      "center":   [-3, 0, 1],
+      "radius":   1.0,
+      "emission": [0, 0, 0],
+      "material": { "kD": 0.5, "kS": 0.5, "shininess": 80 }
+    }
+  ]
+}

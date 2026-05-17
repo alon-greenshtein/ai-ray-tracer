@@ -1,0 +1,32 @@
+{
+  "camera": {
+    "position":   [0, 0, -10],
+    "target":     [0, 0,   0],
+    "vpDistance": 10,
+    "vpWidth":    6,
+    "vpHeight":   6,
+    "imageWidth":  800,
+    "imageHeight": 800
+  },
+  "background":   [10, 10, 30],
+  "ambientLight": { "color": [15, 15, 15] },
+  "lights": [
+    {
+      "type":      "spot",
+      "position":  [-4, 8, -6],
+      "direction": [0.5, -1, 0.5],
+      "color":     [500, 400, 300],
+      "kl":        0.001,
+      "kq":        0.00001
+    }
+  ],
+  "objects": [
+    {
+      "type":     "sphere",
+      "center":   [0, 0, 0],
+      "radius":   1.5,
+      "emission": [100, 10, 10],
+      "material": { "kD": 0.6, "kS": 0.4, "shininess": 60 }
+    }
+  ]
+}
