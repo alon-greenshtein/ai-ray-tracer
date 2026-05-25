@@ -7,23 +7,23 @@ A Java-based 3D rendering engine that generates photorealistic images from compl
 ## Gallery
 
 ### Soft Shadows
-<img src="images/SoftShadowBoxSphereCylinder.png" width="500"/>
+<img src="assets/SoftShadowBoxSphereCylinder.png" width="500"/>
 
 *Area light sampling — natural penumbra instead of hard shadow edges*
 
 ### Reflections & Refraction
-<img src="images/reflectionTwoSpheresMirrored.png" width="370"/> <img src="images/refractionTwoSpheres.png" width="370"/>
+<img src="assets/reflectionTwoSpheresMirrored.png" width="370"/> <img src="assets/refractionTwoSpheres.png" width="370"/>
 
 ### BVH Optimization
-<img src="images/mimip_02_full_optimization.png" width="400"/>
+<img src="assets/mimip_02_full_optimization.png" width="400"/>
 
 *Same scene (500+ objects, 700×700px) rendered with full optimization — BVH + multithreading brings render time from ~30 minutes down to ~45 seconds*
 
 <details>
 <summary>More renders</summary>
 
-<img src="images/refractionShadow.png" width="370"/> <img src="images/shadowTrianglesSphere.png" width="370"/>
-<img src="images/lightCombined1.png" width="370"/> <img src="images/lightCombined2.png" width="370"/>
+<img src="assets/refractionShadow.png" width="370"/> <img src="assets/shadowTrianglesSphere.png" width="370"/>
+<img src="assets/lightCombined1.png" width="370"/> <img src="assets/lightCombined2.png" width="370"/>
 
 </details>
 
@@ -134,7 +134,7 @@ Camera.getBuilder()
     .build()
     .renderImage()
     .writeToImage("output");
-// → images/output.png
+// → assets/output.png
 ```
 
 ---

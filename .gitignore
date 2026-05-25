@@ -5,6 +5,9 @@ out/
 ### Images — render output, not source ###
 images/
 
+### Assets — README gallery images, tracked in git ###
+# assets/ is intentionally NOT ignored
+
 ### Debug — generated JSON artifacts, not source ###
 debug/*
 !debug/.gitkeep
@@ -46,4 +49,5 @@ __pycache__/
 ### Claude / project notes — internal only ###
 __notes/
 CLAUDE.md
-/dependency-reduced-pom.xml
+dependency-reduced-pom.xml
+.claude/
