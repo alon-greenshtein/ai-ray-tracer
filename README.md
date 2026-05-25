@@ -7,7 +7,7 @@ A Java-based 3D rendering engine that generates photorealistic images from compl
 ## Gallery
 
 ### Soft Shadows
-<img src="assets/SoftShadowBoxSphereCylinder.png" width="500"/>
+<img src="assets/SoftShadowBoxSphereCylinder.png" width="400"/>
 
 *Area light sampling — natural penumbra instead of hard shadow edges*
 
