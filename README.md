@@ -6,24 +6,45 @@ A Java-based 3D rendering engine that generates photorealistic images from compl
 
 ## Gallery
 
-### Soft Shadows
-<img src="assets/SoftShadowBoxSphereCylinder.png" width="400"/>
+<img src="assets/complexArtisticSceneSUPER.png" width="380"/> <img src="assets/miniproject1_soft_shadows_spaced.png" width="380"/>
 
-*Area light sampling — natural penumbra instead of hard shadow edges*
+<img src="assets/mysticObservatorywitheshadoRadios.png" width="380"/>
+
+---
+
+### Soft Shadows
+
+<img src="assets/SoftShadowBoxSphereCylinder.png" width="380"/>
+
+*Each light exposes a configurable surface area. Shadow rays are distributed across it using a uniform grid — producing smooth penumbra transitions instead of hard edges.*
+
+```java
+camera.setSoftShadows(true).setGridResolution(9); // 9×9 = 81 shadow rays per point
+```
+
+The super-sampling infrastructure is shared across soft shadows, anti-aliasing, and glossy surface effects.
+
+---
 
 ### Reflections & Refraction
-<img src="assets/reflectionTwoSpheresMirrored.png" width="370"/> <img src="assets/refractionTwoSpheres.png" width="370"/>
+
+<img src="assets/reflectionTwoSpheresMirrored.png" width="380"/> <img src="assets/refractionTwoSpheres.png" width="380"/>
+
+*Mirror surfaces (`kR`) and glass transparency (`kT`) are handled by recursively spawning reflected and refracted rays — depth-limited for performance.*
+
+---
 
 ### BVH Optimization
-<img src="assets/mimip_02_full_optimization.png" width="400"/>
 
-*Same scene (500+ objects, 700×700px) rendered with full optimization — BVH + multithreading brings render time from ~30 minutes down to ~45 seconds*
+<img src="assets/mimip_02_full_optimization.png" width="380"/>
+
+*Same scene (500+ objects, 700×700px) — BVH + multithreading brings render time from ~30 minutes down to ~45 seconds*
 
 <details>
 <summary>More renders</summary>
 
-<img src="assets/refractionShadow.png" width="370"/> <img src="assets/shadowTrianglesSphere.png" width="370"/>
-<img src="assets/lightCombined1.png" width="370"/> <img src="assets/lightCombined2.png" width="370"/>
+<img src="assets/refractionShadow.png" width="380"/> <img src="assets/shadowTrianglesSphere.png" width="380"/>
+<img src="assets/lightCombined1.png" width="380"/> <img src="assets/lightCombined2.png" width="380"/>
 
 </details>
 
